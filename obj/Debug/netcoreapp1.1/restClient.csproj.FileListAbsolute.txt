@@ -1,0 +1,8 @@
+/home/matthew/Code/core/restClient/bin/Debug/netcoreapp1.1/restClient.deps.json
+/home/matthew/Code/core/restClient/bin/Debug/netcoreapp1.1/restClient.runtimeconfig.json
+/home/matthew/Code/core/restClient/bin/Debug/netcoreapp1.1/restClient.runtimeconfig.dev.json
+/home/matthew/Code/core/restClient/bin/Debug/netcoreapp1.1/restClient.dll
+/home/matthew/Code/core/restClient/bin/Debug/netcoreapp1.1/restClient.pdb
+/home/matthew/Code/core/restClient/obj/Debug/netcoreapp1.1/restClient.AssemblyInfo.cs
+/home/matthew/Code/core/restClient/obj/Debug/netcoreapp1.1/restClient.dll
+/home/matthew/Code/core/restClient/obj/Debug/netcoreapp1.1/restClient.pdb
