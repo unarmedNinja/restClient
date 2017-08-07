@@ -12,7 +12,7 @@ namespace WebAPIClient
         static void Main(string[] args)
         {
             Console.WriteLine("Starting WebAPIClient ...");
-
+/* 
             var repositories = ProcessRepositories().Result;
             foreach (var repo in repositories){
                 Console.WriteLine(repo.Name);
@@ -23,7 +23,22 @@ namespace WebAPIClient
                 Console.WriteLine(repo.LastPush);
                 Console.WriteLine();
             }
-                
+*/
+            string url = "https://api.github.com/orgs/dotnet/repos";
+            List<webHeader> headers = new List<webHeader>();
+            webHeader h = new webHeader();
+            h.name = "User-Agent";
+            h.value = ".NET Foundation Repository Reporter";
+            headers.Add(h);
+
+            List<string> acceptHeaders = new List<string>();
+            acceptHeaders.Add("application/vnd.github.v3+json");
+
+
+           Api api = new Api();
+           var content =  api.getData(url, acceptHeaders, headers).Result;
+           Console.WriteLine(content);
+
         }
     
         private static async Task<List<Repository>> ProcessRepositories()
